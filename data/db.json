@@ -1,0 +1,7 @@
+{
+    "jobs":[
+        {"title": "NewBook1", "id": 1 , "author": "Ivan Lukyanov"},
+        {"title": "Book2", "id": 2 , "author": "Vasya Pupkin"},
+        {"title": "BrandNewBook", "id": 3 , "author": "Petya Lokhankin"}
+    ]
+}

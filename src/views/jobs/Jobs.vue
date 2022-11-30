@@ -11,11 +11,14 @@
 export default {
     data(){
         return {
-            jobs: [
-                {title: 'New book1', id: 1 , author: 'Ivan lukyanov'},
-                {title: 'Some new book', id: 2, author: 'Vasya Pupkin'}
-            ]
+            jobs: []
         }
+    },
+    mounted(){
+        fetch('http://localhost:3000/jobs')
+        .then(res => res.json())
+        .then(data => this.jobs = data)
+        .catch(err => console.log(err.message))
     }
 }
 </script>
