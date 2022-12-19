@@ -2,7 +2,7 @@
     <div v-if="job">
         <h1>Job details page</h1>
         <p> {{ $route.params.id }}</p>
-        <p> Job id is: {{ id }}</p>
+        <p> Job id: {{ id }}</p>
         <p> Book name: {{ job.title }} by: {{ job.author }}</p>
     </div>
     <div v-else>
